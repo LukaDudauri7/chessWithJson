@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("content/Images/ChessPieces/chess2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h1 {
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: black;
+            color: white;
+            text-align: center;
+            font-size: 55px;
+        }
+        
+        h2 {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        #game {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            color: white;
+            font-size: 40px;
+            float: left;
+            margin-left: 22.5%;
+            margin-top: 7.5%;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #game1 {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            color: white;
+            font-size: 40px;
+            float: right;
+            margin-right: 22.5%;
+            margin-top: 7.5%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <h1>Chess Game</h1>
+        <h2>Tournament</h2>
+        <div class="dropDown">
+            <a href="index2.html">
+                <button id="game">Olympiad 1999</button>
+            </a>
+        </div>
+        <div class="dropDown">
+            <a href="index.html">
+                <button id="game1">Kiel 1893</button>
+            </a>
+        </div>
+    </body>
+
+</head>
+
+<script>
+    document.getElementById("game").onmouseover = function() {
+        mouseOver()
+    };
+    document.getElementById("game").onmouseout = function() {
+        mouseOut()
+    };
+
+    function mouseOver() {
+        document.getElementById("game").style.color = "red";
+    }
+
+    function mouseOut() {
+        document.getElementById("game").style.color = "white";
+    }
+
+
+
+
+    document.getElementById("game1").onmouseover = function() {
+        mouseOver1()
+    };
+    document.getElementById("game1").onmouseout = function() {
+        mouseOut1()
+    };
+
+    function mouseOver1() {
+        document.getElementById("game1").style.color = "red";
+    }
+
+    function mouseOut1() {
+        document.getElementById("game1").style.color = "white";
+    }
+</script>
+
+</html>
